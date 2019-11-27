@@ -1,34 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import SignIn from './Sign_in';
-import SignUp from "./Sign_up";
-import OnePage from "./OnePage";
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react'
+import { useSpring, animated } from 'react-spring'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          <OnePage/>
-          <SignIn/>
-          <SignUp/>
-          {/*<button>Save</button>*/}
+import './App.css'
+import Routes from './Routes'
+// import SignIn from './SignIn';
+// import SignUp from "./SignUp";
+// import FirstPage from "./FirstPage";
 
-              {/*<img src={logo} className="App-logo" alt="logo" />*/}
-        {/*<p>*/}
-        {/*  Edit <code>src/App.js</code> and save to reload.*/}
-        {/*</p>*/}
-        {/*<a*/}
-        {/*  className="App-link"*/}
-        {/*  href="https://reactjs.org"*/}
-        {/*  target="_blank"*/}
-        {/*  rel="noopener noreferrer"*/}
-        {/*>*/}
-        {/*  Learn React*/}
-        {/*</a>*/}
-      </header>
-    </div>
-  );
+const App = () => {
+    const fade = useSpring({
+        from: {
+            opacity: 0
+        },
+        opacity: 1
+    })
+    return (
+        <animated.div className="App" style={fade}>
+            <Routes />
+            {/*<SignIn/>*/}
+            {/*<SignUp/>*/}
+            {/*<FirstPage/>*/}
+        </animated.div>
+    )
 }
-
-export default App;
+export default App

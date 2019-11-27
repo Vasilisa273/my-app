@@ -29,6 +29,22 @@
   background-color: green;
 }
 
+.button_up {
+  padding: 5px 32px;
+  line-height: 32px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: green;
+}
+
+.button_in {
+  padding: 5px 32px;
+  line-height: 32px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: green;
+}
+
 .input_email {
   background-color: greenyellow;
   border: 1px solid #000;
@@ -79,4 +95,88 @@
   cursor: pointer;
   width: 150px;
   display: block;
+}
+
+.nav-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 100px;
+  background: var(--purp);
+  z-index: 10;
+}
+
+.nav-wrapper a {
+  display: block;
+  text-align: left;
+  font-size: 4rem;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease border;
+  border-bottom: solid 4px transparent;
+}
+
+.nav-wrapper a:hover {
+  border-bottom: solid 4px var(--teal);
+}
+
+.menu-button {
+  appearance: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  z-index: 15;
+}
+
+h1 {
+  color: white;
+}
+
+.checkout {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.checkout-left {
+  width: 30%;
+  height: 100%;
+  background: white;
+}
+.checkout-right {
+  width: 70%;
+  height: 100%;
+  background: var(--purp);
+}
+
+.page-route {
+  height: 60vh;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-route.two {
+  background: blueviolet;
+}
+.page-route.three {
+  background: teal;
+}
+
+.router-nav {
+  display: flex;
+  list-style: none;
+}
+.router-nav a {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 10px;
 }

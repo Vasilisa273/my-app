@@ -55,7 +55,7 @@ class SignUp extends Component {
 
                 <input className = "input_lastname"
                        type="text"
-                       placeholder="Name"
+                       placeholder="Lastname"
                        value={this.state.lastname}
                        onChange={this.onChangeLastname}/>
 
@@ -64,6 +64,9 @@ class SignUp extends Component {
                        placeholder="Password"
                        value={this.state.password}
                        onChange={this.onChangePassword}/>
+                <button className = "button">
+                    Save
+                </button>
             </form>
 
         );

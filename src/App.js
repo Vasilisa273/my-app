@@ -16,12 +16,14 @@ const App = () => {
         opacity: 1
     })
     return (
+        <header className="App-header">
         <animated.div className="App" style={fade}>
             <Routes />
             {/*<SignIn/>*/}
             {/*<SignUp/>*/}
             {/*<FirstPage/>*/}
         </animated.div>
+            </header>
     )
 }
 export default App

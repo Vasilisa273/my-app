@@ -8,9 +8,10 @@ import {
     Switch,
     Route,
     Link,
+    Redirect,
     __RouterContext
 } from 'react-router-dom'
-import { animated, useTransition } from 'react-spring'
+import {animated, useTransition } from 'react-spring'
 
 function useRouter() {
     return useContext(__RouterContext)
@@ -20,17 +21,17 @@ const Main = () => {
     const { location } = useRouter()
 
     const transitions = useTransition(location, location => location.key, {
-        from: {
-            opacity: 0,
-            position: 'absolute',
-            width: '100%',
-            transform: `translate3d(100%, 0, 0)`
-        },
-        enter: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
-        leave: {
-            opacity: 0,
-            transform: `translate3d(-50%, 0, 0)`
-        }
+        // from: {
+        //     opacity: 0,
+        //     position: 'absolute',
+        //     width: '100%',
+        //     transform: `translate3d(100%, 0, 0)`
+        // },
+        // enter: { opacity: 1, transform: 'translate3d(0, 0, 0)' },
+        // leave: {
+        //     opacity: 0,
+        //     transform: `translate3d(-50%, 0, 0)`
+        // }
     })
 
     return transitions.map(({ item, props: transition, key }) => (
@@ -39,6 +40,7 @@ const Main = () => {
                 <Route exact path="/" component={FirstPage} />
                 <Route path="/register" component={SignUp} />
                 <Route path="/login" component={SignIn} />
+                {/*<Redirect from="*" to="/" />*/}
             </Switch>
         </animated.div>
     ))
@@ -47,22 +49,22 @@ const Main = () => {
 const Routes = () => {
     return (
         <Router>
-            <ul className="router-nav">
-                <NavLink to="/">FirstPage</NavLink>
-                <NavLink to="/register">SignUp</NavLink>
-                <NavLink to="/login">SignIn</NavLink>
-            </ul>
+            {/*<ul className="router-nav">*/}
+            {/*    <NavLink to="/">FirstPage</NavLink>*/}
+            {/*    <NavLink to="/register">SignUp</NavLink>*/}
+            {/*    <NavLink to="/login">SignIn</NavLink>*/}
+            {/*</ul>*/}
             <Main />
         </Router>
     )
 }
-function NavLink(props) {
-    return (
-        <li>
-            <Link {...props} />
-        </li>
-    )
-}
+// function NavLink(props) {
+//     return (
+//         <li>
+//             <Link {...props} />
+//         </li>
+//     )
+// }
 
 // const FirstPage = () => {
 //     return (
@@ -85,6 +87,4 @@ function NavLink(props) {
 //         </div>
 //     )
 // }
-
-
 export default Routes

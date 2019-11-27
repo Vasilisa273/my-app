@@ -7,14 +7,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -35,6 +35,7 @@
   border: 1px solid #000;
   text-align: center;
   background-color: green;
+
 }
 
 .button_in {

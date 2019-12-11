@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import SignIn from './SignIn';
 import SignUp from "./SignUp";
 import FirstPage from "./FirstPage";
-
 import {
     BrowserRouter as Router,
     Switch,
@@ -58,33 +57,5 @@ const Routes = () => {
         </Router>
     )
 }
-// function NavLink(props) {
-//     return (
-//         <li>
-//             <Link {...props} />
-//         </li>
-//     )
-// }
 
-// const FirstPage = () => {
-//     return (
-//         <div className="page-route">
-//             <h1>FirstPage</h1>
-//         </div>
-//     )
-// }
-// const SignUp = () => {
-//     return (
-//         <div className="page-route two">
-//             <h1>SignUp</h1>
-//         </div>
-//     )
-// }
-// const SignIn = () => {
-//     return (
-//         <div className="page-route three">
-//             <h1>SignIn</h1>
-//         </div>
-//     )
-// }
 export default Routes

@@ -6,18 +6,17 @@ class FirstPage extends Component {
         return (
             <form action="http://localhost:3000/register/">
                 <button
-                    className = "button_up">
+                    type="submit">
                     Sign up
                 </button>
                 <form action="http://localhost:3000/login/">
-            <button className = "button_in">
+            <button type="submit">
                     Sign in
                 </button>
             </form>
             </form>
-
-
         )
     }
 }
+
 export default FirstPage;

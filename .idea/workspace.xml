@@ -6,7 +6,11 @@
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/history.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +48,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/Загрузки/node/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,7 +90,8 @@
       <workItem from="1570022044537" duration="2927000" />
       <workItem from="1571229755968" duration="6707000" />
       <workItem from="1571393633498" duration="12147000" />
-      <workItem from="1574845100223" duration="20312000" />
+      <workItem from="1574845100223" duration="20360000" />
+      <workItem from="1576052985632" duration="15779000" />
     </task>
     <task id="LOCAL-00001" summary="OnePage">
       <created>1571408354323</created>
@@ -102,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574860242530</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="фон">
+      <created>1574868355444</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574868355444</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="OnePage" />
     <MESSAGE value="Переход по страницам" />
-    <option name="LAST_COMMIT_MESSAGE" value="Переход по страницам" />
+    <MESSAGE value="фон" />
+    <option name="LAST_COMMIT_MESSAGE" value="фон" />
   </component>
 </project>
